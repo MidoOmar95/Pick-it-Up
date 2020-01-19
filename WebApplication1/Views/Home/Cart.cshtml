@@ -1,0 +1,231 @@
+﻿
+@{
+    ViewBag.Title = "Cart";
+    Layout = "~/Views/Shared/_mytemplate.cshtml";
+}
+
+
+<body>
+    <section id="cart_items">
+        <div class="container">
+            <div class="breadcrumbs">
+                <ol class="breadcrumb">
+                    <li><a href="#">Home</a></li>
+                    <li class="active">Shopping Cart</li>
+                </ol>
+            </div>
+            <div class="table-responsive cart_info">
+                <table class="table table-condensed">
+                    <thead>
+                        <tr class="cart_menu">
+                            <td class="image">Item</td>
+                            <td class="description"></td>
+                            <td class="price">Price</td>
+                            <td class="quantity">Quantity</td>
+                            <td class="total">Total</td>
+                            <td></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="cart_product">
+                                <a href=""><img src="images/cart/one.png" alt=""></a>
+                            </td>
+                            <td class="cart_description">
+                                <h4><a href="">Colorblock Scuba</a></h4>
+                                <p>Web ID: 1089772</p>
+                            </td>
+                            <td class="cart_price">
+                                <p>$59</p>
+                            </td>
+                            <td class="cart_quantity">
+                                <div class="cart_quantity_button">
+                                    <a class="cart_quantity_up" href=""> + </a>
+                                    <input class="cart_quantity_input" type="text" name="quantity" value="1" autocomplete="off" size="2">
+                                    <a class="cart_quantity_down" href=""> - </a>
+                                </div>
+                            </td>
+                            <td class="cart_total">
+                                <p class="cart_total_price">$59</p>
+                            </td>
+                            <td class="cart_delete">
+                                <a class="cart_quantity_delete" href=""><i class="fa fa-times"></i></a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="cart_product">
+                                <a href=""><img src="images/cart/two.png" alt=""></a>
+                            </td>
+                            <td class="cart_description">
+                                <h4><a href="">Colorblock Scuba</a></h4>
+                                <p>Web ID: 1089772</p>
+                            </td>
+                            <td class="cart_price">
+                                <p>$59</p>
+                            </td>
+                            <td class="cart_quantity">
+                                <div class="cart_quantity_button">
+                                    <a class="cart_quantity_up" href=""> + </a>
+                                    <input class="cart_quantity_input" type="text" name="quantity" value="1" autocomplete="off" size="2">
+                                    <a class="cart_quantity_down" href=""> - </a>
+                                </div>
+                            </td>
+                            <td class="cart_total">
+                                <p class="cart_total_price">$59</p>
+                            </td>
+                            <td class="cart_delete">
+                                <a class="cart_quantity_delete" href=""><i class="fa fa-times"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="cart_product">
+                                <a href=""><img src="images/cart/three.png" alt=""></a>
+                            </td>
+                            <td class="cart_description">
+                                <h4><a href="">Colorblock Scuba</a></h4>
+                                <p>Web ID: 1089772</p>
+                            </td>
+                            <td class="cart_price">
+                                <p>$59</p>
+                            </td>
+                            <td class="cart_quantity">
+                                <div class="cart_quantity_button">
+                                    <a class="cart_quantity_up" href=""> + </a>
+                                    <input class="cart_quantity_input" type="text" name="quantity" value="1" autocomplete="off" size="2">
+                                    <a class="cart_quantity_down" href=""> - </a>
+                                </div>
+                            </td>
+                            <td class="cart_total">
+                                <p class="cart_total_price">$59</p>
+                            </td>
+                            <td class="cart_delete">
+                                <a class="cart_quantity_delete" href=""><i class="fa fa-times"></i></a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section> <!--/#cart_items-->
+
+    <section id="do_action">
+        <div class="container">
+            <div class="heading">
+                <h3>What would you like to do next?</h3>
+                <p>Choose if you have a discount code or reward points you want to use or would like to estimate your delivery cost.</p>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="chose_area">
+                        <ul class="user_info">
+                            <li class="single_field">
+                                <label>Country:</label>
+                                <select>
+                                    <option>Egypt</option>
+                                    <option>Saudi Arabia</option>
+                                    <option>UAE</option>
+                                    <option>Lebanon</option>
+                                </select>
+
+                            </li>
+                            <li class="single_field">
+                                <label>Region / State:</label>
+                                <select>
+                                    <option>Cairo</option>
+                                    <option>Alexandria</option>
+                                </select>
+
+                            </li>
+                            <li class="single_field zip-field">
+                                <label>Zip Code:</label>
+                                <input type="text">
+                            </li>
+                        </ul>
+                        <a class="btn btn-default update" href="">Get Quotes</a>
+                        <a class="btn btn-default check_out" href="">Continue</a>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="total_area">
+                        <ul> <li>Total <span>$61</span></li>
+                        </ul>
+                        <a class="btn btn-default check_out" href="">Pick It Up!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!--/#do_action-->
+
+    <footer id="footer">
+        <!--Footer-->
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="footer-widget">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-2">
+                                    <div class="single-widget">
+                                        <h2>Service</h2>
+                                        <ul class="nav nav-pills nav-stacked">
+                                            <li><a href="#">Online Help</a></li>
+                                            <li><a href="#">Contact Us</a></li>
+                                            <li><a href="#">Order Status</a></li>
+                                            <li><a href="#">FAQ’s</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-sm-2">
+                                    <div class="single-widget">
+                                        <h2>Policies</h2>
+                                        <ul class="nav nav-pills nav-stacked">
+                                            <li><a href="#">Terms of Use</a></li>
+                                            <li><a href="#">Privecy Policy</a></li>
+                                            <li><a href="#">Refund Policy</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-sm-2">
+                                    <div class="single-widget">
+                                        <h2>About Shopper</h2>
+                                        <ul class="nav nav-pills nav-stacked">
+                                            <li><a href="#">Company Information</a></li>
+                                            <li><a href="#">Copyright</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 col-sm-offset-1">
+                                    <div class="single-widget">
+                                        <h2>About Shopper</h2>
+                                        <form action="#" class="searchform">
+                                            <input type="text" placeholder="Your email address" />
+                                            <button type="submit" class="btn btn-default"><i class="fa fa-arrow-circle-o-right"></i></button>
+                                            <p>Get the most recent updates from <br />our site and be updated your self...</p>
+                                        </form>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-bottom">
+                        <style width="900px"></style>
+                        <div class="container">
+                            <div class="row">
+
+                                <p class="pull-left">Copyright © 2013 Pick It Up Inc. All rights reserved.</p>
+                            </div>
+                        </div>
+                    </div>
+    </footer><!--/Footer-->
+
+
+    <script src="@Url.Content("~/Content/mytemplate/")js/jquery.js"></script>
+    <script src="@Url.Content("~/Content/mytemplate/")js/bootstrap.min.js"></script>
+    <script src="@Url.Content("~/Content/mytemplate/")js/jquery.scrollUp.min.js"></script>
+    <script src="@Url.Content("~/Content/mytemplate/")js/jquery.prettyPhoto.js"></script>
+    <script src="@Url.Content("~/Content/mytemplate/")js/main.js"></script>
+</body>
